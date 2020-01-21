@@ -1,15 +1,15 @@
 {
     "type": "sqlite",
-    "database": "src/database.db",
+    "database": "server/database.db",
     "entities": [
-        "src/entity/**/*.ts"
+        "server/entity/**/*.ts"
     ],
     "synchronize": true,
     "logging": false,
     "migrations": [
-        "src/migration/**/*.ts"
+        "server/migration/**/*.ts"
     ],
     "subscriptions": [
-        "src/subscription/**/*.ts"
+        "server/subscription/**/*.ts"
     ]
 }
