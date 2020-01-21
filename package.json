@@ -2,12 +2,14 @@
   "name": "volunteer-points-log",
   "version": "1.0.0",
   "description": "Application that allows SCA Gulf Wars volunteers to log their hours and accrue points.",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon",
-    "build": "rimraf ./build && tsc",
-    "start": "npm run build && node build/server.js"
+    "start:prod": "npm run build && ts-node ./build/server.js",
+    "start:dev": "nodemon -x \"npm run build && nodemon\"",
+    "build": "npm run build:server && npm run build:client",
+    "build:server": "rimraf ./build && tsc",
+    "build:client": "cd client && npm run build && ren \"build\" \"client\" && move \"client\" \"../build\" && cd ..",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

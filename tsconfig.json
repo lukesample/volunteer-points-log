@@ -1,9 +1,8 @@
 {
-  "compilerOptions": {                            
-    // "allowJs": true,
-    "outDir": "build",                          
-    "rootDir": "src",      
-    // "noImplicitAny": true,
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "build",
+    "rootDir": "server",
     "resolveJsonModule": true,
     "lib": ["es5", "es6"],
     "target": "es6",
@@ -11,7 +10,11 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"]
+    }
   },
-  "exclude": ["node_modules"]
+  "include": ["server/**/*"]
 }

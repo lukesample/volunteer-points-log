@@ -28,6 +28,10 @@ TODO: Finish documenting this once the React application is setup.
 
 ## Running on Server
 
-```npm start```
+```npm start:prod```
 
 TODO: Finish documenting this.
+
+## Running tests
+
+```npm run test```

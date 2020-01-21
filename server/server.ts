@@ -19,7 +19,7 @@ createConnection()
     /**
      * Serve static React app files.
      */
-    app.use(express.static(path.join(__dirname, 'client/build')));
+    app.use(express.static(path.join(__dirname, 'client')));
 
     /**
      * Register all of the routes from the files in the route directory.
@@ -40,7 +40,7 @@ createConnection()
      * Any unregistered routes should be directed to the React app.
      */
     app.get('*', (req, res) => {
-      res.sendfile(path.join(`${__dirname}/client/build/index.html`));
+      res.sendfile(path.join(`${__dirname}/client/index.html`));
     });
 
     /**
