@@ -1,4 +1,4 @@
-import { getUsers } from './controller/GetUsers';
+import UserController from './controller/UserController';
 
 /**
  * All application routes
@@ -7,6 +7,6 @@ export const AppRoutes = [
   {
     path: '/users',
     method: 'get',
-    action: getUsers
+    action: UserController.getUsers
   }
 ];
