@@ -8,7 +8,7 @@
     "start:dev": "nodemon -x \"npm run build && nodemon\"",
     "build": "npm run build:server && npm run build:client",
     "build:server": "rimraf ./build && tsc",
-    "build:client": "cd client && npm run build && ren \"build\" \"client\" && move \"client\" \"../build\" && cd ..",
+    "build:client": "cd client && npm run build && mv build client && mv client ../build && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
