@@ -1,15 +1,9 @@
 {
-    "type": "sqlite",
-    "database": "server/database.db",
-    "entities": [
-        "server/entity/**/*.ts"
-    ],
-    "synchronize": true,
-    "logging": false,
-    "migrations": [
-        "server/migration/**/*.ts"
-    ],
-    "subscriptions": [
-        "server/subscription/**/*.ts"
-    ]
+  "type": "sqlite",
+  "database": "build/database.db",
+  "entities": ["build/entity/**/*.ts"],
+  "synchronize": true,
+  "logging": false,
+  "migrations": ["build/migration/**/*.ts"],
+  "subscriptions": ["build/subscription/**/*.ts"]
 }
