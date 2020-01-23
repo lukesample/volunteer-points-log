@@ -1,3 +1,5 @@
+![](https://github.com/WebDevJBR/volunteer-points-log/workflows/volunteer-points-log-ci/badge.svg)
+
 # Volunteer Points Log
 
 Application that allows SCA Gulf Wars volunteers to log their hours and accrue points.
