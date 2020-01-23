@@ -1,9 +1,9 @@
 {
   "type": "sqlite",
-  "database": "build/database.db",
-  "entities": ["build/entity/**/*.ts"],
+  "database": "db/database.db",
+  "entities": ["build/entity/**/*.js"],
   "synchronize": true,
   "logging": false,
-  "migrations": ["build/migration/**/*.ts"],
-  "subscriptions": ["build/subscription/**/*.ts"]
+  "migrations": ["build/migration/**/*.js"],
+  "subscriptions": ["build/subscription/**/*.js"]
 }
